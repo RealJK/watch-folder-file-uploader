@@ -1,6 +1,6 @@
-=Watch Folder - File Uploader Script=
+= Watch Folder - File Uploader Script=
 
-==Introduction==
+== Introduction ==
 
 BASH script that monitors a watch folder and uploads new files via HTTP POST (ie. via curl).  Also supports upto _n_ retry attempts, and also handle purging of files that were already transferred successfully.
 
@@ -8,7 +8,7 @@ Script is designed to be executed via a cron job.  Works on Linux and Windows vi
 
 <img src="https://f.cloud.github.com/assets/3783092/226153/8603fcb6-861c-11e2-93d5-390bb7819964.png" />
 
-==Usage==
+== Usage ==
 
 <pre>
 transfer.sh -dir <watch directory> -retry <retry count> -uri <http endpoint> \
@@ -17,7 +17,7 @@ transfer.sh -dir <watch directory> -retry <retry count> -uri <http endpoint> \
 transfer.sh -dir /var/log/service/ -retry 5 -uri http://host/log.cgi -purge 5 -prefix db
 </pre>
 
-==Example Flow==
+== Example Flow ==
 
 <pre>
 Given this cron:
@@ -50,6 +50,6 @@ Given this cron:
 
 </pre>
 
-==Notes==
+== Notes ==
 
   * Can easily be modified to do HTTP PUT for WEBDAV.
